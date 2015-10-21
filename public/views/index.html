@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https:////cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
     <link rel="stylesheet" href="css/styles.css">  
   </head>
-  <body class="container-fluid">
+  <body class="container-fluid" ng-app="wiltApp" ng-controller="mainController as main">
 
     <nav class="navbar navbar-default" role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,16 +26,18 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
          <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">HTML/CSS</a></li>
-          <li><a href="#">General Dev</a></li>
-          <li><a href="#">WTF??</a></li>
+          <li><a href="/javascript">JavaScript</a></li>
+          <li><a href="/htmlandcss">HTML/CSS</a></li>
+          <li><a href="/general">General Dev</a></li>
+          <li><a href="/wtf">WTF??</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
   </nav>
 <!---area for view rendering -->
-<div class="main-content">
-  <div ng-view></div>
+<div class="content-views">
+  <main>
+   <div ng-view></div>
+  </main>
 </div>
 
 <!---scripts---->
